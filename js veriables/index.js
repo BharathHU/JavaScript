@@ -1,0 +1,14 @@
+var name="Bharath";
+var age=21;
+var add="Bengaluru";
+var isMarried=false;
+var salary=50000.00;
+var hobbies=["coding","cricket","music"];
+var languages=["English","Hindi","Kannada"];
+console.log("Name:"+name);
+console.log("Age:"+age);
+console.log("Address:"+add);
+console.log("Is Married:"+isMarried);
+console.log("Salary:"+salary);
+console.log("Hobbies:"+hobbies);
+console.log("Languages:"+languages);

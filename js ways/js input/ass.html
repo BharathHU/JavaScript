@@ -8,18 +8,26 @@
 <body>
     <h1>About MySelf</h1>
     <script>
-        let name=window.prompt("Please enter your name:")
-        console.log(name)
-        document.write("Hello, " + name + "!")
-        let age=window.prompt("Please enter your age:")
-        let add=window.prompt("Please enter your address:")
-        document.write("my name is "+name +" and I am "+age+" years old. I live in "+add)
-        let dob=window.prompt("Please enter your date of birth:")
-        let college=window.prompt("Please enter your college name:")
-        let degree=window.prompt("Please enter your degree:")
-        let stream=window.prompt("Please enter your stream:")
-        let project=window.prompt("Please enter your project name:")
-        document.write("I was born on "+dob+"."+"<br>"+"I have completed my graduation from "+college+" with a degree in "+degree+" and stream in "+stream+". I have done a project on "+project+".")
+        let name = window.prompt("Please enter your name:");
+        document.write("Hello, " + name + "!<br>");
+
+        let age = window.prompt("Please enter your age:");
+        let add = window.prompt("Please enter your address:");
+        document.write("My name is " + name + "<br>");
+        document.write("I am " + age + " years old.<br>");
+        document.write("I live in " + add + "<br>");
+
+        let dob = window.prompt("Please enter your date of birth:");
+        let college = window.prompt("Please enter your college name:");
+        let degree = window.prompt("Please enter your degree:");
+        let stream = window.prompt("Please enter your stream:");
+        let project = window.prompt("Please enter your project name:");
+
+        document.write("I was born on " + dob + ".<br>");
+        document.write("I completed my graduation from " + college + ".<br>");
+        document.write("Degree: " + degree + "<br>");
+        document.write("Stream: " + stream + "<br>");
+        document.write("Project: " + project + "<br>");
     </script>
 </body>
 </html>
