@@ -5,6 +5,7 @@ console.log("Diffrence b/w num is:",a-b)
 console.log("Product of num is:",a*b)
 console.log("Exponentiation of num is:",a**b)
 console.log("Division of num is:",a/b)
+console.log(a%b)
 let pos=4
 let neg=-4
 console.log(pos-neg)
@@ -19,4 +20,6 @@ console.log(1+"1"+2+2+"3")
 console.log("11"+2+2+"3")
 console.log("5"*[])
 console.log("5"*[10])
-console.log("5"*[2,3])
+console.log("5"*[2,3]) // not a number
+console.log(true+1)
+console.log(false+1)
