@@ -11,3 +11,10 @@ function add(){
 
 }
 add()
+function greet1 (){
+    console.log("How are you?")
+}
+greet()
+greet1()
+add()
+
