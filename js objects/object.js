@@ -4,4 +4,4 @@ var person={
     add:"Bengaluru",
     gender:"Male"
 }
-console.log("\n",person)
+console.log(person)
