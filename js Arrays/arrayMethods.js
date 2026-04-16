@@ -68,3 +68,12 @@ console.log("=========================================================")
  console.log("lastindexOf()")
  var arr5=["raj",100,"rahul","Sachin",true,100,99]
  console.log(arr5.lastIndexOf("Sachin"))
+ console.log(arr5.lastIndexOf(100))
+ console.log(arr5.lastIndexOf(true))
+ console.log(arr5.lastIndexOf(99))
+ console.log(arr5.lastIndexOf("rahul"))
+ console.log(arr5.lastIndexOf("raj"))
+
+ //join()
+ console.log("join()")
+
