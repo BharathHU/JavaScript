@@ -43,6 +43,7 @@ console.log("=========================================================")
  console.log(arr2)
  arr2.unshift(18)
  console.log(18)
+ //==================================================================================
 
  //shift()
  console.log("shift()")
@@ -63,6 +64,7 @@ console.log("=========================================================")
  console.log(arr4)
  console.log(arr4.indexOf(true))
  console.log(arr4.indexOf("asd"))
+ //=============================================================================================
 
  //lastindexOf()
  console.log("lastindexOf()")
@@ -73,7 +75,39 @@ console.log("=========================================================")
  console.log(arr5.lastIndexOf(99))
  console.log(arr5.lastIndexOf("rahul"))
  console.log(arr5.lastIndexOf("raj"))
-
+//========================================================================================================
  //join()
  console.log("join()")
+ var arr6=["raj",100,"rahul","Sachin",true,100,99]
+ console.log(arr6.join())
+ console.log(arr6.join("@"))
+ console.log(arr.join("$"))
+
+ //====================================================================
+ console.log("reverse()")
+
+ var arr7=["raj",100,"rahul","Sachin",true,100,99]
+ console.log(arr7)
+ res=arr6.reverse()
+ console.log(res)
+
+//==================================================================================
+ //includes()
+ var arr8=["raj",100,"rahul","Sachin",true,100,99]
+ console.log(arr8)
+ console.log(arr8.includes(100))
+ console.log(arr8.includes("Nishchii"))
+
+ //=====================================================================================
+ //slice()
+ console.log("slice()")
+
+ var arr9=["raj",100,"rahul","Sachin",true,100,99]
+ console.log(arr9)
+ console.log(arr9.slice(3))
+ console.log(slice(2,5))
+ console.log(arr9)
+
+
+
 
