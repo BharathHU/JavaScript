@@ -105,7 +105,7 @@ console.log("=========================================================")
  var arr9=["raj",100,"rahul","Sachin",true,100,99]
  console.log(arr9)
  console.log(arr9.slice(3))
- console.log(slice(2,5))
+ console.log(arr9.slice(2,5))
  console.log(arr9)
 
 
