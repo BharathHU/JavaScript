@@ -55,3 +55,16 @@ console.log("=========================================================")
  console.log(arr3)
  arr3.shift()
  console.log(arr3)
+ //=======================================================================================================
+
+ //indexOf()
+ console.log("indexOf()")
+ var arr4=[10,"Sachin",true,15.6789,"Virat","y"]
+ console.log(arr4)
+ console.log(arr4.indexOf(true))
+ console.log(arr4.indexOf("asd"))
+
+ //lastindexOf()
+ console.log("lastindexOf()")
+ var arr5=["raj",100,"rahul","Sachin",true,100,99]
+ console.log(arr5.lastIndexOf("Sachin"))
