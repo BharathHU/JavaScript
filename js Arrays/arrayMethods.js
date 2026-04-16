@@ -108,6 +108,14 @@ console.log("=========================================================")
  console.log(arr9.slice(2,5))
  console.log(arr9)
 
+ //splice()
+ console.log("splice()")
+ var arr10=[1,2,3,4,5,6,7,8,9]
+ console.log("THe oroginal array before splicing",arr10)
+ res=arr10.splicedArr(2,4)
+ console.log("Spliced Array"+res)
+ console.log("original array after splicing"+arr10)
+
 
 
 
