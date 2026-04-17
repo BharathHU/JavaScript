@@ -43,3 +43,27 @@ return element.salary*13
 console.log(nemp)
 console.log(emp)
 
+//filter()
+//used to filter elements or data from the array based on certain condition filter callback function
+//  will return always boolean value  it will not alter original array it will create new array
+console.log("filter()")
+var arr3=[101,300,456,654,339,600]
+var newar=arr3.filter(function(ele,index){
+    return ele>200
+})
+console.log(newar)
+console.log(arr3)
+
+//===========================================================
+let person=[{name:"raj",age:44},
+    {name:"Ramu",age:45},
+    {name:"raaj",age:18},
+    {name:"kaaka",age:16},
+    {name:"xyz",agr:13},
+    {name:"raajuu",age:19},
+    {name:"Ramya",age:22}]
+newper=person.filter(function(ele,index){
+    return ele.age>18
+})
+console.log(newper)
+
