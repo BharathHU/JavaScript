@@ -67,3 +67,12 @@ newper=person.filter(function(ele,index){
 })
 console.log(newper)
 
+//reduce()
+//it is used to reduce the array to one single value reduce mathod is such a
+//a method which accepts a callback function as the parameter(1st para)(2ndpara)initial value.
+console.log("reduce()")
+let n=[10,20,30,40,50,60,70]
+let res=n.reduce(function(prev,curre){
+  return prev+curre
+})
+console.log(res)
