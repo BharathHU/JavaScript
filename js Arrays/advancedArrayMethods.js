@@ -75,4 +75,12 @@ let n=[10,20,30,40,50,60,70]
 let res=n.reduce(function(prev,curre){
   return prev+curre
 })
+let res1=n.reduce(function(prev,curre){
+  return prev-curre
+})
+let res2=n.reduce(function(prev,curre){
+  return prev*curre
+})
+console.log(res2)
 console.log(res)
+console.log(res1)
