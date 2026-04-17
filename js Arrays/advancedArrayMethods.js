@@ -13,8 +13,12 @@ arr1.forEach(function(ele,index){
 })
 let data=[{name:"Bharath",age:22},
     {name:"Nischitha",age:22},
-{name:"Nibha",age:2}
+{name:"Nibha",age:2},
+{name:"Arya",age:1}
 ]
 data.forEach(function(ele,index){
 console.log(data)
+})
+data.forEach((ele,index)=>{
+    console.log(ele.name+" "+ele.age+" "+index)
 })
