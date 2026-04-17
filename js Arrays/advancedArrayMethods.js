@@ -22,3 +22,13 @@ console.log(data)
 data.forEach((ele,index)=>{
     console.log(ele.name+" "+ele.age+" "+index)
 })
+//==========================================================
+//map()
+// it should be return some value returned value alwayes added in new array map() will not alter original array.
+console.log("map()")
+var arr2=[101,102,103,104,105]
+var newarr2=arr2.map(function(element,index){
+    return element*10
+})
+console.log("The newarray:"+newarr2)
+console.log("The original Array:"+arr2)
