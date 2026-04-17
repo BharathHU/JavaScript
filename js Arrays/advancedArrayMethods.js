@@ -32,3 +32,14 @@ var newarr2=arr2.map(function(element,index){
 })
 console.log("The newarray:"+newarr2)
 console.log("The original Array:"+arr2)
+
+let emp=[{id:101,salary:20000},
+    {id:102,salary:30000},
+    {id:103,salary:40000},
+    {id:104,salary:45000}]
+let nemp=emp.map(function(element,index){
+return element.salary*13
+})
+console.log(nemp)
+console.log(emp)
+
