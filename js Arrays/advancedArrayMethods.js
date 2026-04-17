@@ -84,3 +84,18 @@ let res2=n.reduce(function(prev,curre){
 console.log(res2)
 console.log(res)
 console.log(res1)
+/*sort()*/
+/*if we want to sort the elements of an array in ascending or descending order we can use sort() method*/
+console.log("--------------------------------------------------")
+console.log("sort() method")
+var names=["Sachin","Akash","Virat","zijay","Goutham"]
+console.log(names.sort())
+
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+var array1=[10,2,5,17]
+console.log(array1.sort())
+
+array1.sort((a,b)=>{
+    return a-b
+})
+console.log(array1)
