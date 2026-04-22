@@ -38,3 +38,4 @@ console.log(str4.slice(-3))
 console.log("replace()")
 let str5="Welcome to JavaScript"
 console.log(str5.replace("JavaScript","JS"))
+console.log(str5.replaceAll("Welcome","hello Welcome"))
