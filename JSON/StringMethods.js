@@ -20,3 +20,4 @@ console.log(str2.toUpperCase())
 console.log("SubString():")
 let str3="Welcome to JavaScript"
 console.log(str3.substring(3, 21))
+console.log(str3.substring(11))
