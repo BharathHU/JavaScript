@@ -61,4 +61,5 @@ console.log(str6.trimEnd())
 console.log("Concat()")
 strr1="hello"
 strr2="world"
+console.log(strr1.toUpperCase())
 console.log(strr1.concat(" ",strr2))

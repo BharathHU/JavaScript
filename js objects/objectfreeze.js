@@ -6,7 +6,7 @@
 // # you cannot change the values of existing properties
 // # you cannot reassign or reconfigure any property
 const user1={name:"Raj",age:21}
-// Object.freeze(user1)
+Object.freeze(user1) // if you freeze object if you do any updates it will not happend bcz the object was freezed.
 user1.name="Bharath"
 user1.city="Mumbai"
 delete user1.age

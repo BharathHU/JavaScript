@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">Welcome to JS class</h1>
+    <button onclick="change()">change</button>
+
+    <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, repellat.</p>
+    <h3 id="three"></h3>
+    <pre id="four">Hello how are you</pre>
+
+    <script>
+        let h1ref = document.getElementById('one')
+        console.log(h1ref)
+
+        let p1ref = document.getElementById('two')
+        console.log(p1ref)
+
+        let h3ref = document.getElementById('three')
+        h3ref.innerHTML = "Example for DOM methods"
+
+        let pre1ref = document.getElementById('four')
+        pre1ref.textContent = "I am fine Thank you"
+
+        function change(){
+            let h1ref = document.getElementById('one')
+            h1ref.textContent = "Thank you for visiting"
+        }
+    </script>
+</body>
+</html>

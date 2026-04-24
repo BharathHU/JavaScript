@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>UserName <input type="text" name="Username"></label>
+    <label>Password <input type="text" name="Password"></label>
+    <br> <br>
+    <label>UserName <input type="text" name="UserName"></label>
+    <label>Password <input type="text" name="Password"></label>
+    <button id="btn" type="submit" onclick="Change()" style="border:4px solid black; background-color: pink; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" translate="yes">Submit</button>
+    <h1>Dhee Coding Lab</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut quidem consectetur asperiores atque fugiat! Aut asperiores enim nisi molestiae perferendis accusantium repellat sequi molestias, labore voluptatibus, vero veritatis earum tempora?
+    </p>
+    <script>
+        let inputref1 =document.getElementsByName('Username')
+        console.log(inputref1)
+        console.log(inputref1[1])
+        inputref1[0].style.backgroundColor="yellow"
+        inputref1[1].style.backgroundColor="yellow"
+        
+        function Change(){
+    let inputref2 = document.getElementsByName('Password')
+
+    inputref2[0].style.border = "5px solid green"
+    inputref2[1].style.border = "5px solid green"
+
+    inputref1[0].style.backgroundColor = "pink"
+    inputref2[0].style.backgroundColor = "pink"
+
+    // 👇 FIX HERE
+    let btnref = document.getElementById("btn")
+    btnref.style.color = "white"           // text color
+    btnref.style.backgroundColor = "red"   // button background
+}
+        let inputref2 =document.getElementsByName('Password')
+        console.log(inputref2)
+        console.log(inputref2[1])
+        inputref2[0].style.backgroundColor="yellow"
+        inputref2[1].style.backgroundColor="pink"
+    </script>
+</body>
+</html>
