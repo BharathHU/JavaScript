@@ -6,22 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> anything </h1>
 
-<h4 class="four"> this is everytg </h4>
+    <h1>anything</h1>
 
-<h4 class="four"> this is nothing </h4>
+    <h4 class="four">this is everything</h4>
+    <h4 class="four">this is nothing</h4>
 
-<script>
+    <script>
+        var res = document.querySelectorAll('h1') 
+        console.log(res)
 
-var res=document.querySelectorALL('h1') 
-console.log(res)
-var res1=document.querySelectorALL('p')
-console.log(res1)
-var res3=document.querySelectorALL('.four') 
-console.log(res3)
+        var res1 = document.querySelectorAll('p')
+        console.log(res1)
 
-</script>
+        var res3 = document.querySelectorAll('.four') 
+        console.log(res3)
+
+        // create element
+        let pre = document.createElement('pre')
+        pre.textContent = "This is created using querySelectorAll method"
+
+        // 👇 FIX: select body
+        let body = document.body
+        body.append(pre)
+    </script>
 
 </body>
 </html>
