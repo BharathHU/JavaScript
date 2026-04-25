@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+            background-color: lightgreen;
+            margin: 0px;
+            /* animation-name: ani;
+            animation-duration: 4s;
+            animation-iteration-count: infinite; */
+        }
+        div{
+            margin: 100px auto;
+            box-shadow: 0px 0px 10px 5px black;
+            padding: 50px;
+            text-align: center;
+            width: 500px;
+            background-color: white;
+            border-radius: 7px;
+            animation-name: ani2;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        div:hover{
+            transform: scale(1.09);
+        }
+        @keyframes ani{
+            0%{
+                background-color: whitesmoke;
+            }
+            25%{
+                background-color: blue;
+            }
+            50%{
+                background-color: pink;
+            }
+            75%{
+                background-color: burlywood;
+            }
+            100%{
+                background-color: blueviolet;
+            }
+        }
+        @keyframes ani2{
+            25%{
+                transform: rotateY(30deg);
+                background-color: yellow;
+                font-style: italic;
+            }
+            50%{
+                transform: scaleX(1.01);
+                background-color: pink;
+                font-style: oblique;
+            }
+            75%{
+                transform-style: preserve-3d;
+                background-color: aqua;
+                transform: scaleY(1.1);
+            }
+            100%{
+                background-color: whitesmoke;
+
+            }
+        }
+    </style>
+</head>
+<body>
+   <div>
+        <h2>Show/Hide Password</h2>
+        <input id="password" type="password" name="password">
+        <button id="btn" onclick="ShoworHidePassword()">Show password</button>
+    </div>
+   <script>
+function ShoworHidePassword(){
+let passwordref=document.getElementById('password')
+let btnref=document.getElementById('btn')
+if(passwordref.type==='password'){
+    passwordref.type="text"
+    btnref.innerHTML="Hide Password"
+}
+else{
+    passwordref.type="password"
+    btnref.innerHTML="Show Password"
+}
+}
+   </script>
+</body>
+</html>
