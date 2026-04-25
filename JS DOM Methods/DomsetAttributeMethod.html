@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input">
+    <input type="radio" id="one">option1
+    <img id="two"   src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg" alt="" height="200px" wei
+    ght="200px">
+    <script>
+        let inputref1=document.getElementById('input')
+        inputref1.setAttribute('type', 'password')
+        let inputref2=document.getElementById('one')
+        inputref2.setAttribute('type','checkbox')
+        let inputRef=document.createElement('abbr')
+        inputRef.innerHTML='CEC'
+        inputRef.setAttribute('title','City Engineering College')
+        document.body.appendChild(inputRef)
+        let imgref=document.getElementById('two')
+        imgref.setAttribute('src','https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?cs=srgb&dl=clouds-cloudy-conifers-247478.jpg&fm=jpg')
+    </script>
+
+</body>
+</html>
