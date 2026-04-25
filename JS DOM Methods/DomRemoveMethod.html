@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, beatae?</h1>
+    <h3>Welcome to Dom methods</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, earum.</p>
+    <script>
+        let btn=document.createElement('button')
+        btn.textContent="Dynomic button"
+
+        let body=document.body
+        body.appendChild(btn)
+
+        let h3ref=document.createElement('h3')
+        h3ref.innerHTML= "<u> Exaple for DOM Methods </u>"
+        body.appendChild(h3ref)
+
+        let h1ref=document.getElementById('one')
+        h1ref.remove()
+        btn.remove()
+    </script>
+</body>
+</html>
