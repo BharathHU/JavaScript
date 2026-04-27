@@ -1,19 +1,47 @@
+<!-- // all actions in js we call as event
+// To find how many events we have in is js type in console onclick
+<-- // Events -->
+<!-- // events is nothing but some activity on the webpage Event consists of two things event listener and event handler -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #btn{
+            background-color: pink;
+            color: black;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 2px;
+            font-style: italic;
+
+        }
+        #btn:hover{
+            transform: scale(1.10);
+            background-color: greenyellow;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to EventaObject</h1>
-    <button onclick="onclic()">Click me</button>
+    <h1>Welcome to Event Object</h1>
+    <button onclick="handleClick(event)" id="btn">Click me</button>
+
     <script>
-        function onclic(){
+        function handleClick(event){
             alert("Button clicked!!!")
-        }
-        function onclick(event){
+
             console.log(event)
+            console.log(event.target)
+            console.log(event.type)
+
+            event.target.style.backgroundColor = "red"
+
+            for(var data in event){
+                console.log(data)
+            }
+
+            event.target.remove()
         }
     </script>
 </body>
