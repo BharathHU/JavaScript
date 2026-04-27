@@ -1,0 +1,77 @@
+<!-- onmouseover and onmouseout
+these are the events related to mouse move activity
+onmouseover:when we take out cursor from any wev element it gets trigger -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>onmouseover and onmouseout</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background: #f4f4f4;
+		}
+
+		.box {
+			width: 280px;
+			height: 170px;
+			background: #3498db;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 14px;
+			font-size: 22px;
+			font-weight: bold;
+			cursor: pointer;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+			transition: all 0.25s ease;
+			user-select: none;
+		}
+	</style>
+</head>
+<body>
+	<div
+		class="box"
+		onmouseover="this.style.background='#27ae60'; this.textContent='Mouse Over'; this.style.transform='scale(1.05)'"
+		onmouseout="this.style.background='#3498db'; this.textContent='Hover Over Me'; this.style.transform='scale(1)'"
+	>
+		Hover Over Me
+	</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color: red;
+        height: 300;
+        width: 300;
+    }
+</style>
+<body>
+    <div onmouseover="MouseOut()" onmouseout="MouseOut()" id="one"></div>
+    <script>
+        function MouseOver(){
+            let divref=document.getElementById('one')
+            divref.style.backgroundColor="blue"
+        }
+         function MouseOut(){
+            let divref=document.getElementById('one')
+            divref.style.backgroundColor="Orange"
+            divref.style.borderRadius="50%"
+        }
+    </script>
+</body>
+</html>
