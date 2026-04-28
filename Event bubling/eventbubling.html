@@ -7,6 +7,11 @@
 <!-- -why does event bubbling happen?
 *javascript  -->
 
+<!-- *javascript uses event propagation
+*makes event delegation possible
+*reduces number of event listeners in the application
+*improves performance of the appllication -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,8 +48,7 @@
 document.getElementById('btn').addEventListener('click', (event) => {
     alert("Child button clicked");
 
-    // stop bubbling here
-    event.stopPropagation();
+    
 });
 
 document.getElementById('parent').addEventListener('click', () => {
