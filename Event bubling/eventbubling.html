@@ -29,16 +29,59 @@
     justify-content: center;
     align-items: center;
 }
+#parent:hover{
+    background-color: yellow;
+    border: 30px;
+    border-color: 15px solid pink;
+}
 #btn {
     padding: 10px 20px;
     font-size: 16px;
 }
+#btn:active{
+    background-color: pink;
+    border-radius: 30px;
+    border: whitesmoke;
+    transform: scale(1.2);
+}
+#head:hover{
+    color: rgb(243, 7, 46);
+    transform:scale(1.2);
+}
+    
+    #head{
+         animation-name: ani;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    }
+
+ @keyframes ani {
+            0% {
+                background-color: yellowgreen;
+                border-color: gold;
+            }
+            25% {
+                background-color: aqua;
+                border-color: burlywood;
+            }
+            50% {
+                background-color: pink;
+                border-color: chartreuse;
+            }
+            75% {
+                background-color: brown;
+                border-color: chocolate;
+            }
+            100% {
+                background-color: blue;
+            }
+        }
 </style>
 
 </head>
 <body>
 
-<h1>* Example for Event Bubbling</h1>
+<h1 id="head">* Example for Event Bubbling</h1>
 
 <div id="parent">
     <button id="btn">Click Me</button>
