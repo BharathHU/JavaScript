@@ -2,22 +2,94 @@
 addEventListener() accept 2 parameters
 1.type of event(string) ex:click,change,etc
 2.callback function -->
+<!-- Adding Event through javascript
+*we can listen to events through javascript by using addEventListener()
+*addEventListener()accepts 2 parameters
+
+1.type of event(string) ex:click,change,etc
+2.callback function -->
+<!-- click event -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Events Demo</title>
 </head>
 <body>
+
+    <!-- Click Event -->
+    <h1>Click Event</h1>
     <button id="btn">Click</button>
+
+    <br><br><hr>
+
+    <!-- onchange Event -->
+    <h1>onchange Event</h1>
+    <input type="text" id="txt" placeholder="Enter text">
+
+    <br><br><hr>
+
+    <!-- onkeydown Event -->
+    <h1>onkeydown Event</h1>
+    <input type="text" id="keydownInput" placeholder="Press a key">
+
+    <br><br><hr>
+
+    <!-- onsubmit Event -->
+    <h1>onsubmit Event</h1>
+    <form id="formSubmit">
+        <input type="text" placeholder="Enter your name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br><br><hr>
+
+    <!-- onfocus Event -->
+    <h1>onfocus Event</h1>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="username">Username</label>
+            <input 
+                type="text" 
+                id="username"
+                placeholder="Choose a unique username"
+                minlength="3"
+            >
+            <div>Minimum 3 characters required</div>
+        </form>
+    </div>
+
+    <!-- JavaScript -->
     <script>
-       let btnref= document.getElementById('btn')
-       btnref.addEventListener('click',
-        function(){
-            alert("Good morning")
-        }
-       )
+        // Click Event
+        document.getElementById("btn").addEventListener("click", function () {
+            alert("Button was clicked!");
+        });
+
+        // Change Event
+        document.getElementById("txt").addEventListener("change", function () {
+            alert("Text was changed!");
+        });
+
+        // Keydown Event
+        document.getElementById("keydownInput").addEventListener("keydown", function () {
+            alert("Key was pressed!");
+        });
+
+        // Submit Event
+        document.getElementById("formSubmit").addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Form was submitted!");
+        });
+
+        // Focus Event
+        document.getElementById("username").addEventListener("focus", function () {
+            alert("Username field focused!");
+        });
     </script>
+
 </body>
 </html>
