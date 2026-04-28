@@ -1,0 +1,23 @@
+<!-- we can listen to events through by using addEventListener()
+addEventListener() accept 2 parameters
+1.type of event(string) ex:click,change,etc
+2.callback function -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click</button>
+    <script>
+       let btnref= document.getElementById('btn')
+       btnref.addEventListener('click',
+        function(){
+            alert("Good morning")
+        }
+       )
+    </script>
+</body>
+</html>

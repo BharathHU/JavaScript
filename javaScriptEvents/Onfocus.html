@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="one" onfocus="FocusOnEle()" placeholder="Enter the text">
+   
+   <script>
+    function FocusOnEle(){
+        let input=document.getElementById("one")
+        input.style.border="2px solid green"
+        input.style.backgroundColor="pink"
+        input.style.height="50px"
+        input.style.width="200px"
+        input.style.boxShadow="0px 0px 10px blue"
+    }
+   </script>
+</body>
+</html>

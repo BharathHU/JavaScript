@@ -8,10 +8,10 @@
         *{
             background-color: aquamarine;
             font-style: italic;
-            animation-name: ani;
+            /* animation-name: ani;
             animation-duration: 6s;
             animation-iteration-count: infinite;
-            animation-direction: alternate;
+            animation-direction: alternate; */
         }
         #btn{
             background-color: white;
@@ -20,27 +20,61 @@
         }
         @keyframes ani{
             0%{
-                background-color: rgb(red, green, blue);
+                background-image: url(https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?cs=srgb&dl=clouds-cloudy-conifers-247478.jpg&fm=jpg);
                 color: red;
                 font-style: normal;
+
                 
             }
             25%{
-                background-color: blue;
+                background-image: url(https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?cs=srgb&dl=cascade-clouds-cool-wallpaper-210186.jpg&fm=jpg);
                 color: white;
+                background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
             }
             50%{
-                background-color: whitesmoke;
+               background-image:url(https://www.thewowstyle.com/wp-content/uploads/2015/01/images-of-nature-4.jpg);
                 color: black;
+                background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
             }
             75%{
-                background-color: cyan;
+                background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70) ;
                 color: darkblue;
+                background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
             }
             100%{
-                background-color: pink;
+                background-image: url(https://tse4.mm.bing.net/th/id/OIP.Eg3Iu4rLjCR_RTxFJ7JCCwHaE8?pid=ImgDet&w=474&h=316&rs=1&o=7&rm=3);
                 color: brown;
+                background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
             }
+        }
+        .box1{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            border: 5px solid whitesmoke;
+            box-shadow: 0px 0px 5px 2px;
+            text-align: center;
+            background-color: greenyellow;
+            animation-name: ani;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .box1:hover{
+    transform: scale(1.2);
+    background-image: url(https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?cs=srgb&dl=clouds-cloudy-conifers-247478.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
         }
 
     </style>
@@ -77,5 +111,7 @@
             }
         });
     </script>
+    <div class="box1">box1
+    </div>
 </body>
 </html>
