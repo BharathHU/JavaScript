@@ -15,6 +15,10 @@
             margin: 90px auto;
             text-align: center;
             background-color: whitesmoke;
+             animation-name: ani;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            
         }
         #myform{
                display: flex;
@@ -22,18 +26,49 @@
                padding: 15px;
              align-items: center;
              background-color: whitesmoke;
+              animation-name: ani;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            border-radius: 16px;
         }
         input{
             height: 30px;
             width: 60%;
             background-color: white;
+            border-radius: 4px;
+            
         }
         label{
             font-size: x-large;
             background-color: whitesmoke;
+             animation-name: ani;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
         }
         main:hover{
             transform: scale(1.2);
+           
+        }
+         @keyframes ani {
+            0% {
+                background-color: yellowgreen;
+                border-color: gold;
+            }
+            25% {
+                background-color: aqua;
+                border-color: burlywood;
+            }
+            50% {
+                background-color: pink;
+                border-color: chartreuse;
+            }
+            75% {
+                background-color: brown;
+                border-color: chocolate;
+            }
+            100% {
+                background-color: blue;
+            }
         }
     </style>
 </head>
