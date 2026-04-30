@@ -12,6 +12,13 @@ console.log(args)
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function greet(greeting,...names){
+            for (let name of names){
+                console.log(`${greeting},${name}`)
+            }
+        }
+        greet('hello','Bharath Nishchitha','Chaluva','Ujwal','Vishal','Chandan')
+    </script>
 </body>
 </html>
