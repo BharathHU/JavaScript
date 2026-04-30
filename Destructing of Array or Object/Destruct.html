@@ -3,32 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Destructing of Array or Object</h1>
-    <script>
-        var obj={
-            name:"Bharath",
-            age:22,
-            city:"Bengaluru",
-            gender:"male"
-        }
-        //old approch
-        var name=obj.name
-        var age=obj.age
-        var city=obj.city
-        var gender
-        console.log(name)
-        console.log(age)
-         console.log(city)
-         console.log(gender)
-        //new approch
-        // const{name,age,city,gender}=obj
-        //  console.log(name)
-        // console.log(age)
-        // console.log(city)
+    <title>Destructuring</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        /* 📱 Mobile (max-width: 600px) */
+        @media (max-width: 600px) {
+            body {
+                background-color: lightblue;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+                color: darkblue;
+            }
+        }
+
+        /* 📱 Tablet (601px - 900px) */
+        @media (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+        }
+
+        /* 💻 Desktop (above 900px) */
+        @media (min-width: 901px) {
+            body {
+                background-color: #f5f5f5;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Destructuring of Array or Object</h1>
+
+    <script>
+        const obj = {
+            name: "Bharath",
+            age: 22,
+            city: "Bengaluru",
+            gender: "male"
+        };
+
+        const { name, age, city, gender } = obj;
+
+        console.log(name, age, city, gender);
     </script>
 </body>
 </html>
