@@ -16,3 +16,17 @@ ShallowCopy.name="Rohit"
 ShallowCopy.addres.number=456789
 console.log("Orginal copy:",orginal)
 console.log("Shallow copy",ShallowCopy)
+
+console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+let numbers=[1,2,[3,4],5,6]
+
+let copynumbers=numbers.slice();
+
+console.log("Orginal numbers",numbers)
+console.log("Shallow Copy",copynumbers)
+
+copynumbers[2][0]=300
+copynumbers[0]=100
+
+console.log("Orginal numbers after change",numbers)
+console.log("Shallow Copy after change",copynumbers)
