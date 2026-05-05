@@ -18,6 +18,7 @@ console.log("Orginal copy:",orginal)
 console.log("Shallow copy",ShallowCopy)
 
 console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+console.log("Inside Array:")
 let numbers=[1,2,[3,4],5,6]
 
 let copynumbers=numbers.slice();

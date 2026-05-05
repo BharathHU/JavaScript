@@ -12,6 +12,7 @@ deeepCopy.addres.number=456789
 console.log("Orginal copy:",orginal)
 console.log("Deep copy",deeepCopy)
 console.log("===================================================================================")
+console.log("Inside Array:")
 let numbers=[1,2,[3,4],5,6]
 
 let deepCopy=JSON.parse(JSON.stringify(numbers))
