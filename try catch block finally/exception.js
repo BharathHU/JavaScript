@@ -12,8 +12,10 @@
 try{
     var num=20;
     fname="Bharath"
+    age=22
     console.log('num'/num)
     console.log(fname)
+    console.log(age)
 }
 catch(err){
     console.log(err)

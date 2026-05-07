@@ -12,4 +12,4 @@ function demo(){
 
 }
 demo()
-console.log(demo)
+console.log("End")
