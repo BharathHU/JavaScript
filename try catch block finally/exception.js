@@ -16,6 +16,7 @@ try{
     console.log('num'/num)
     console.log(fname)
     console.log(age)
+     console.log("hello")
 }
 catch(err){
     console.log(err)
