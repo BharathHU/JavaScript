@@ -1,0 +1,32 @@
+<!-- what is web strorage
+web storage allows browser to store data on the client side (user's browser).
+there are 2 main types
+1.local storage
+2.session storage 
+Local Storaage:
+# Local storage is a type of browser storage that allows you to store key value pair in the browser
+# The data is stored even when the browser is closed and reopened.
+# Shared across tabes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h2>Javascript memory management</h2>
+    <script>
+        //store data
+        localStorage.setItem('name','Bharath')
+        //get data
+        const name = localStorage.getItem("name");
+        console.log(name)
+        //remove data
+        localStorage.removeItem("name");
+        //clear all
+        localstorage.clear();
+
+    </script>
+    
+</body>
+</html>
