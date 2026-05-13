@@ -1,7 +1,5 @@
 body {
     background: rgb(200, 220, 224);
-    margin: 0;
-    padding: 0;
 }
 
 .form {
@@ -14,8 +12,6 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 h1 {
@@ -26,7 +22,6 @@ h1 {
     text-align: center;
     color: #fff;
     font-size: 25px;
-    border-radius: 10px 10px 0 0;
 }
 
 .form input[type="text"],
@@ -34,19 +29,17 @@ h1 {
     box-sizing: border-box;
     width: 100%;
     background: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 4%;
     border: 1px solid #ccc;
-    padding: 12px;
+    padding: 4%;
     font-size: 17px;
     color: rgb(9, 61, 125);
-    border-radius: 5px;
 }
 
 .form input[type="text"]:focus,
 .form input[type="url"]:focus {
     box-shadow: 0 0 5px #5868bf;
     border: 1px solid #5868bf;
-    outline: none;
 }
 
 #qrcode-container {
@@ -56,30 +49,23 @@ h1 {
 button {
     box-sizing: border-box;
     width: 180px;
-    margin: 10px auto;
-    padding: 12px;
+    margin: 0 auto;
+    padding: 3%;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 17px;
     background: #0853b6;
     color: #fff;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #063d85;
 }
 
 .qrcode {
     padding: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .qrcode img {
     margin: 0 auto;
-    display: block;
     box-shadow: 0 0 10px rgba(67, 67, 68, 0.25);
     padding: 4px;
-    border-radius: 5px;
 }

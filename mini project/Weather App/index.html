@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- MAIN STYLES CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- FONT AWESOME LINK -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <title>Weather App</title>
+</head>
+<body>
+  <main class="app">
+    <section class="card" id="weather-card">
+      <header class="top">
+        <div class="search">
+          <input
+            id="city"
+            type="text"
+            placeholder="Enter city name"
+            spellcheck="false"
+            autocomplete="off"
+          />
+
+          <button id="btn" aria-label="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="row right">
+          <button id="unit-toggle" class="unit-toggle" type="button">°C</button>
+        </div>
+      </header>
+
+      <section class="status">
+        <div id="loading" class="loading" aria-live="polite">
+          <span class="spinner" aria-hidden="true"></span>
+          <span>Loading...</span>
+        </div>
+        <div id="error" class="error" aria-live="assertive" hidden></div>
+      </section>
+
+      <section class="hero" aria-live="polite">
+        <img id="weather-icon" class="weather-icon" alt="" src="" />
+        <div class="hero-text">
+          <h1 id="temp" class="temp">--°</h1>
+          <h2 id="city-name" class="city">--</h2>
+          <p id="condition" class="condition">--</p>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Weather details">
+        <div class="tile">
+          <div class="tile-head">
+            <i class="fa fa-thermometer-half" aria-hidden="true"></i>
+            <span>Feels like</span>
+          </div>
+          <div class="tile-value" id="feels-like">--</div>
+        </div>
+
+        <div class="tile">
+          <div class="tile-head">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            <span>Min / Max</span>
+          </div>
+          <div class="tile-value" id="min-max">-- / --</div>
+        </div>
+
+        <div class="tile">
+          <div class="tile-head">
+            <i class="fa fa-tint" aria-hidden="true"></i>
+            <span>Humidity</span>
+          </div>
+          <div class="tile-value" id="humidity">--</div>
+        </div>
+
+        <div class="tile">
+          <div class="tile-head">
+            <i class="fa fa-wind" aria-hidden="true"></i>
+            <span>Wind</span>
+          </div>
+          <div class="tile-value" id="wind">--</div>
+        </div>
+
+        <div class="tile">
+          <div class="tile-head">
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
+            <span>Pressure</span>
+          </div>
+          <div class="tile-value" id="pressure">--</div>
+        </div>
+
+        <div class="tile tile-wide">
+          <div class="tile-head">
+            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+            <span>Coordinates</span>
+          </div>
+          <div class="tile-value" id="coords">--</div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

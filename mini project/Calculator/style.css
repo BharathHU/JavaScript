@@ -30,6 +30,6 @@ input[type=button]{
     border-radius: 5px;
 }
 input:active[type=button]{
-    background-color: #504f52;
+    background-color: #6fa5c3;
     box-shadow: inset 0px 0px 5px #c1c1c1;
 }
