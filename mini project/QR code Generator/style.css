@@ -57,6 +57,7 @@ button {
     background: #0853b6;
     color: #fff;
     cursor: pointer;
+    border-radius: 5px;
 }
 button:active{
     background-color: greenyellow;
