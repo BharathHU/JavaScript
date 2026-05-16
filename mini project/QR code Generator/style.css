@@ -58,6 +58,10 @@ button {
     color: #fff;
     cursor: pointer;
 }
+button:active{
+    background-color: greenyellow;
+    color: black;
+}
 
 .qrcode {
     padding: 16px;
