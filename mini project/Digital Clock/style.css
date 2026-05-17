@@ -1,5 +1,5 @@
 body{
-    background-color: grey;
+    background-color:transparent;
     padding: 250px;
 }
 .container{
@@ -17,4 +17,19 @@ h1{
 #clock{
     font-size: 30px;
     font-style: monospace;
+}
+.container:hover{
+    background-color: skyblue;
+    color: white;
+    animation-name: ani;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes ani{
+    0%{
+        transform: rotateX('360 deg');
+    }
+    100%{
+     transform: rotateX('360 deg');   
+    }
 }
